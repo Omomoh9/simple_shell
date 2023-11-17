@@ -9,10 +9,10 @@
  */
 void error_f(char **argv, char *arg)
 {
-	int k;
+	int a;
 
-	for (k = 0; argv[k]; k++)
-		free(argv[k]);
+	for (a = 0; argv[a]; a++)
+		free(argv[a]);
 	free(argv);
 	free(arg);
 	exit(EXIT_FAILURE);

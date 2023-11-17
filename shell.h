@@ -76,14 +76,14 @@ void shell_exit(char **args);
 
 void myprompt(void);
 
-char *path_g(void);
+char *path_get(void);
 
 void sigint_h(int sig);
 void sigquit_h(int sig);
 void sigstp_h(int sig);
 
 int terminate_program(sh_t *myshell);
-int directory_chg(sh_t *myshell);
+int dir_chg(sh_t *myshell);
 int help_display(sh_t *myshell);
 int builtin_handler(sh_t *myshell);
 int check_builtin(sh_t *myshell);
@@ -124,7 +124,6 @@ void index_cmd(sh_t *myshell);
 void array_rev(char *arr, int len);
 
 
-void error_f(char **argv, char *arg);
 void tokens_f(char **ptr);
 void paths_f(void);
 

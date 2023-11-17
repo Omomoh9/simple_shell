@@ -2,13 +2,13 @@
 
 #define SETOWD(V) (V = _strdup(_getenv("OLDPWD")))
 /**
- * directory_chg - function changes to currnet working directory
+ * dir_chg - function changes to currnet working directory
  *
  * @myshell: pointer to the shell data structure
  *
  * Return: 0 (success) and -----Fail
  */
-int directory_chg(sh_t *myshell)
+int dir_chg(sh_t *myshell)
 {
 	char *home_dir;
 
@@ -113,7 +113,7 @@ int builtin_handler(sh_t *myshell)
 {
 	blt_t blt[] = {
 		{"exit", terminate_program},
-		{"cd", directory_chg},
+		{"cd", dir_chg},
 		{"help", help_display},
 		{NULL, NULL}
 	};

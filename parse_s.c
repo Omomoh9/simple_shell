@@ -61,7 +61,7 @@ int is_builtin(sh_t *myshell)
 {
 	blt_t blt[] = {
 		{"exit", terminate_program},
-		{"cd", directory_chg},
+		{"cd", dir_chg},
 		{"help", help_display},
 		{NULL, NULL}
 	};

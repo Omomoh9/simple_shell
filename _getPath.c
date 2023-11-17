@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * path_g - funct that returns the value of the PATH enviroment variable.
+ * path_get - funct that returns the value of the PATH enviroment variable.
  *
  * Return: A Pointer to the value of $PATH.
  */
-char *path_g(void)
+char *path_get(void)
 {
 	return (_getenv("PATH"));
 }
